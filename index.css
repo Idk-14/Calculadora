@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    background-color: #606c38;
+}
+
+h2{
+   text-align: center; 
+   font-size: 3rem;
+   padding: 5px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    height: 80vh;
+}
+
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: #dda15e;
+    padding: 15px;
+    border-radius: 18px;
+    box-shadow: 10px 5px 0px 1px #3b5024;
+}
+
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 18px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #dda15e;
+    box-shadow: 5px 5px 10px -3px #3b502440, -5px -5px 15px 3px #dda15e;
+}
+
+button:active{
+    background-color: #c48f53;
+}
+
+button:focus{
+    outline: none;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+/*Pantalla*/
+.display{
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #403d39;
+    border-radius: 18px;
+    text-align: right;
+    justify-content: end;
+    word-break: break-all;
+    font-size: 40px;
+}
+
+footer{
+    text-align: end;
+    padding: 10px;
+}
